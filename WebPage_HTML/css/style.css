@@ -1,0 +1,273 @@
+ body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+ main {
+   flex: 1 0 auto;
+ }
+
+ /*iki 600px*/
+ @media screen AND (max-width:600px) {
+
+   /* pasirenkama jei reikia naudoti   */
+   .container {
+     width: 90%;
+     margin: auto
+   }
+
+   .cols1 {
+     width: 8.33%;
+   }
+
+   .cols2 {
+     width: 16.66%;
+   }
+
+   .cols3 {
+     width: 25%;
+   }
+
+   .cols4 {
+     width: 33.3%;
+   }
+
+   .cols5 {
+     width: 41.66%;
+   }
+
+   .cols6 {
+     width: 50%;
+   }
+
+   .cols7 {
+     width: 58.33%;
+   }
+
+   .cols8 {
+     width: 66.66%;
+   }
+
+   .cols9 {
+     width: 75%;
+   }
+
+   .cols10 {
+     width: 83.33%;
+   }
+
+   .cols11 {
+     width: 91.66%;
+   }
+
+   .cols12 {
+     width: 100%;
+   }
+ }
+
+ /*nuo 600px ir daugiau*/
+ @media screen AND (min-width:601px) {
+   .container {
+     width: 85%;
+     margin: auto;
+   }
+
+   .colm1 {
+     width: 8.33%;
+   }
+
+   .colm2 {
+     width: 16.66%;
+   }
+
+   .colm3 {
+     width: 25%;
+   }
+
+   .colm4 {
+     width: 33.3%;
+   }
+
+   .colm5 {
+     width: 41.66%;
+   }
+
+   .colm6 {
+     width: 50%;
+   }
+
+   .colm7 {
+     width: 58.33%;
+   }
+
+   .colm8 {
+     width: 66.66%;
+   }
+
+   .colm9 {
+     width: 75%;
+   }
+
+   .colm10 {
+     width: 83.33%;
+   }
+
+   .colm11 {
+     width: 91.66%;
+   }
+
+   .colm12 {
+     width: 100%;
+   }
+ }
+
+ /*nuo 993px ir daugiau*/
+ @media screen AND (min-width:993px) {
+   .container {
+     width: 70%;
+     margin: auto;
+   }
+
+   .coll1 {
+     width: 8.33%;
+   }
+
+   .coll2 {
+     width: 16.66%;
+   }
+
+   .coll3 {
+     width: 25%;
+   }
+
+   .coll4 {
+     width: 33.3%;
+   }
+
+   .coll5 {
+     width: 41.66%;
+   }
+
+   .coll6 {
+     width: 50%;
+   }
+
+   .coll7 {
+     width: 58.33%;
+   }
+
+   .coll8 {
+     width: 66.66%;
+   }
+
+   .coll9 {
+     width: 75%;
+   }
+
+   .coll10 {
+     width: 83.33%;
+   }
+
+   .coll11 {
+     width: 91.66%;
+   }
+
+   .coll12 {
+     width: 100%;
+   }
+ }
+
+ nav {
+   position: inherit;
+   top: 0;
+   background-color: #33879c;
+   height: 10vh;
+ }
+
+ footer,
+ nav {
+   background-color: #33879c;
+   color: white;
+   position: inherit;
+ }
+
+ .page-footer {
+   background-color: #33879c;
+ }
+
+ input[type=text],
+ select,
+ textarea {
+   width: 100% !important;
+   padding: 12px !important;
+   border: 1px solid #ccc !important;
+   border-radius: 5px !important;
+   box-sizing: border-box !important;
+   margin-top: 6px !important;
+   margin-bottom: 16px !important;
+   resize: vertical !important;
+ }
+
+ input[type=submit] {
+   background-color: #33879c;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ input[type=submit]:hover {
+   background-color: rgb(0, 95, 255);
+ }
+
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   margin-bottom: auto;
+ }
+
+ .row-centered {
+   justify-content: center;
+ }
+
+ .row-left {
+   justify-content: flex-start;
+ }
+
+ .row-right {
+   justify-content: flex-start;
+ }
+
+ a:hover {
+   background-color: rgb(0, 95, 255);
+ }
+
+ a {
+   color: white;
+ }
+
+ .collapsible-body span {
+   font-style: oblique;
+ }
+
+ .collapsible-body {
+   padding: 10px;
+   background-color: #f1f1f1;
+ }
+
+ .collapsible-header:hover {
+   background-color: #33879c;
+   color: white !important;
+ }
+
+ h2 {
+   padding: 14px;
+ }
+
+.img {
+  position: absolute;
+  z-index: -1;
+}
