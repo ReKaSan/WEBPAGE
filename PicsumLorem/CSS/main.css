@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+#expandedImg {
+    align-items: flex-start;
+    width: 70vw;
+    height: 70vh;
+}
+
+/*
+#imgtext {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    color: red;
+    font-size: 20px;
+}
+*/
+.container {
+    float: right;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.pop{
+    text-align: center;
+}
+
+.column-left {
+    float: left;
+    width: 16%;
+    background: white;
+    height: 85%;
+    overflow: auto;
+}
+
+.column-right {
+/*    align-content: center;*/
+    float:none;
+    width: 84%;
+    background: white;
+    height: 85%;
+    overflow: auto;
+}
+
+.empty {
+    height: 5px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+header {
+    background-image: url("https://blog.csiro.au/wp-content/uploads/2018/08/file-20180822-149484-cs44toreduced.jpg");
+    background-size: cover;
+    font-size: 50pt;
+    color: white;
+    position: relative;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.footer-text {
+    text-align: center;
+    color: brown;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgrey;
+}

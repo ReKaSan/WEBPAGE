@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Lorem Picsum Gallery</title>
+</head>
+
+<body>
+    <header>
+        <div class="row row-centered">
+            <div class="header-text">LOREM PICSUM GALLERY</div>
+        </div>
+    </header>
+    <div class="empty"></div>
+            <div class="container">    
+        <div class="column-left">
+            <img src="https://picsum.photos/id/0/5616/3744" style="width:100%" onclick="myFunction(this)">
+            <img src="https://picsum.photos/id/1/5616/3744" style="width:100%" onclick="myFunction(this)">
+            <img src="https://picsum.photos/id/10/2500/1667" style="width:100%" onclick="myFunction(this)">
+            <img src="https://picsum.photos/id/100/2500/1656" style="width:100%" onclick="myFunction(this)">
+            <img src="https://picsum.photos/id/1000/5626/3635" style="width:100%" onclick="myFunction(this)">
+            <img src="https://picsum.photos/id/1001/5616/3744" style="width:100%" onclick="myFunction(this)">
+            <img src="https://picsum.photos/id/1002/4312/2868" style="width:100%" onclick="myFunction(this)">
+            <img src="https://picsum.photos/id/1006/3000/2000" style="width:100%" onclick="myFunction(this)">
+            <img src="https://picsum.photos/id/1004/5616/3744" style="width:100%" onclick="myFunction(this)">
+            <img src="https://picsum.photos/id/1005/5760/3840" style="width:100%" onclick="myFunction(this)">
+        </div>
+
+        <div class="column-right">
+           <img>
+            <p class="pop"></p>
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg">
+            <!--            <div id="imgtext"></div>-->
+        </div>
+    </div>
+    <div class="empty"></div>
+
+    <footer class="footer">
+        <div class="row row-centered">
+            <div class="footer-text">redaskardauskas@yahoo.com</div>
+        </div>
+    </footer>
+    <script src="JS/custom.js">
+        function myFunction(imgs);
+    </script>
+
+    <script type="text/javascript">
+        let image = document.querySelector('img');
+        let text = document.querySelector('p');
+
+        fetch('https://picsum.photos/200/200/?random=1')
+            .then(function(res) {
+                res.blob().then(function(blob) {
+                    image.src = URL.createObjectURL(blob);
+                })
+
+                fetch('https://picsum.photos/id/' + res.headers.get('Picsum-ID') + '/info').then(function(res) {
+                    res.json().then(function(json) {
+                        text.innerHTML = JSON.stringify(json)
+                    })
+                })
+            })
+    </script>
+
+</body></html>
